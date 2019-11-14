@@ -10,12 +10,17 @@ module.exports= async (query)=>{
 
     console.log('analysis',results.data.items[0].volumeInfo.title)
     const resultsArray = []
+    const titles = {}
+   
     for(let i =0 ; i< results.data.items.length; i++){
         resultsArray.push({
             title : results.data.items[i].volumeInfo.title, authors: results.data.items[i].volumeInfo.authors, publisher: results.data.items[i].volumeInfo.publisher
         })
+
+        titles[i] = results.data.items[i].volumeInfo.title
     }
-return resultsArray
+
+    return [resultsArray, titles]
 
 
 }

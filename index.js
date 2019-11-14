@@ -20,7 +20,7 @@ module.exports = () => {
   }
   switch (cmd){
     case 'booklist':
-     require('./cmd/booklist')(args)
+     favBooks.list.push(require('./cmd/booklist')(args))
      break
     case 'favorite':
      require('./cmd/favorites')(args)
