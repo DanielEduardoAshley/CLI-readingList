@@ -13,9 +13,9 @@ const menus = {
   
       --search, -s .....  search books by book title`,
     favorite:`
-      readingList favorite <options>
+      readingList favorite 
 
-      --favorite -f .... save to reading list
+      --favorite -f  save to reading list
     `,
     savedList:`
       readingList savedList <options>
