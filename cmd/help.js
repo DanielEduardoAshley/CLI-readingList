@@ -4,7 +4,7 @@ const menus = {
   
       booklist .............. query book
       favorite .............. favorite a book
-      savedList     .............. view books saved to reading list
+      view    .............. view books saved to reading list
       version ............ show package version
       help ............... show help menu for a command`,
   
@@ -12,17 +12,7 @@ const menus = {
       readingList booklist <options>
   
       --search, -s .....  search books by book title`,
-    favorite:`
-      readingList favorite 
-
-      --favorite -f  save to reading list
-    `,
-    savedList:`
-      readingList savedList <options>
-
-      --savedList -s .... view book titles in your favorites list
-
-    `
+   
   }
   
   module.exports = (args) => {

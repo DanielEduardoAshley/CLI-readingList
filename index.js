@@ -24,6 +24,9 @@ module.exports = () => {
     case 'favorite':
      require('./cmd/favorites')(args)
      break
+    case 'view':
+    require('./cmd/view')(args)
+     break
     case 'version':
      require('./cmd/version')(args)
      break
