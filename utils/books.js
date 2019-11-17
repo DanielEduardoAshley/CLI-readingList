@@ -13,7 +13,7 @@ module.exports= async (query)=>{
    
     for(let i =0 ; i< results.data.items.length; i++){
         resultsArray.push({
-            title : results.data.items[i].volumeInfo.title, authors: results.data.items[i].volumeInfo.authors.join(', '), publisher: results.data.items[i].volumeInfo.publisher
+            title : results.data.items[i].volumeInfo.title, authors: (results.data.items[i].volumeInfo.authors || []).join(', ') || '', publisher: (results.data.items[i].volumeInfo.publisher || '')
         })
 
         titles[i+1] = results.data.items[i].volumeInfo.title
