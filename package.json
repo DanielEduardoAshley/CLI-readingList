@@ -5,8 +5,15 @@
     "bin": {
         "readingList": "bin/readingList"
     },
-    "scripts": {},
-    "devDependencies": {},
+    "scripts": {
+        "test": "$(npm bin)/jest --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+        "write-coveralls": "rm -rf .coveralls.yml && echo \"repo_token:$COVERAGE_TOKEN\" >> .coveralls.yml",
+        "start": "node index.js"
+    },
+    "devDependencies": {
+        "coveralls": "^3.0.9",
+        "jest": "^24.9.0"
+    },
     "dependencies": {
         "axios": "^0.19.0",
         "cli-select": "^1.1.1",

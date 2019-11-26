@@ -7,8 +7,7 @@ module.exports=(args)=>{
             return
         }else{
            
-            fs.readFile( __dirname + 
-                '/savedBooks.txt',{ encoding : "utf8" }, function(err, contents){
+            fs.readFile( __dirname + '/savedBooks.txt',{ encoding : "utf8" }, function(err, contents){
                 let list = JSON.parse(contents)
                 console.log(list, )
             })
