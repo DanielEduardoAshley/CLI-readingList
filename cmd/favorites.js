@@ -22,8 +22,10 @@ module.exports=async()=>{
         }).then((val)=>{
             doit( data[0][val.id-1])
             // console.log('se', data[0][val.id-1])
-        });
+        })
+       
     })
+    
 
    
 }
