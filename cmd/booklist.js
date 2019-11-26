@@ -13,7 +13,7 @@ module.exports= async (args)=>{
         spinner.stop()
         booksReturned.push(books[1])
         const data = books
-        fs.writeFile('lastCalledBooks.txt', JSON.stringify(data), {encoding: 'utf8'}, function(err) { if(err)console.log(err) });
+        fs.writeFile(__dirname + '/lastCalledBooks.txt', JSON.stringify(data), {encoding: 'utf8'}, function(err) { if(err)console.log(err) });
        
         
 
