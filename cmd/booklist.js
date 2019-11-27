@@ -22,7 +22,7 @@ module.exports= async (args)=>{
     }
     catch(err){
         spinner.stop()
-        console.error(err)
+        console.log('Was not able to retrieve the booklist based on your inquiry, please try your search again!')
 
 
     }
