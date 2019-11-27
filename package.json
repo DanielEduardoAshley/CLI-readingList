@@ -19,5 +19,23 @@
         "cli-select": "^1.1.1",
         "minimist": "^1.2.0",
         "ora": "^4.0.3"
-    }
+    },
+    "jest": {
+        "collectCoverage": true,
+        "coverageReporters": [
+          "json",
+          "lcov",
+          "text",
+          "clover",
+          "html"
+        ],
+        "collectCoverageFrom": [
+          "**/*.{js,jsx}",
+          "!**/node_modules/**",
+          "!**/vendor/**",
+          "!**/__fixtures__/**",
+          "!**/coverage/**",
+          "!index.js"
+        ]
+      }
 }
