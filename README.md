@@ -36,7 +36,7 @@ Terminal Commands
 ```bash
 Run tests: npm test
 
-Travis continous intergration pipeline triggers builds on merge with master
+Travis continous intergration pipeline triggers builds on merge with master as well as continuous coverage reporting through coveralls.io
 ```
 
 ## Contributing
