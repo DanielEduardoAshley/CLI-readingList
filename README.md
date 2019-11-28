@@ -1,4 +1,5 @@
-# Reading List CLI
+# Reading List CLI   
+ [![Coverage Status](https://coveralls.io/repos/github/DanielEduardoAshley/CLI-readingList/badge.svg?branch=readinglistbranch)](https://coveralls.io/github/DanielEduardoAshley/CLI-readingList?branch=readinglistbranch)
 
 ### Google Books Api Command Line Interface Application
 
@@ -29,6 +30,13 @@ Terminal Commands
       readingList booklist <options>
   
       --search, -s .....  search books by book title,
+```
+
+## Testing
+```bash
+Run tests: npm test
+
+Travis continous intergration pipeline triggers builds on merge with master
 ```
 
 ## Contributing
