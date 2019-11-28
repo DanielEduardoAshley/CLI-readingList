@@ -2,6 +2,12 @@ const cliSelect = require('cli-select');
 const fs = require('fs');
 const chalk = require('chalk');
 
+<<<<<<< readinglistbranch
+=======
+<<<<<<< master
+}
+=======
+>>>>>>> local
 module.exports=async()=>{
 //Read from lastCalledBooks text file
       fs.readFile(__dirname + '/lastCalledBooks.txt', {encoding: 'utf8'}, function(err, contents) {
@@ -62,4 +68,11 @@ function doit(data){
   
 
    
+<<<<<<< readinglistbranch
 }
+=======
+}
+
+
+>>>>>>> local
+>>>>>>> local
