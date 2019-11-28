@@ -1,11 +1,15 @@
+//Takes args from the command line and returns an object
 const minimist = require('minimist');
 
 
 
 module.exports = () => {
   console.log('Welcome to your reading list')
+//Using the args from the command line, saves the args object to the const args
   const args = minimist(process.argv.slice(2))
-  
+
+
+//If terminal command is empty, help, or h cmd equals help, if the command is version or v cmd is equal to version  
   let cmd = args._[0] || 'help'
 
   if(args.version || args.v){
@@ -16,7 +20,7 @@ module.exports = () => {
       cmd = 'help'
   }
 
-  
+//Switch statement if cmd is booklist, favorite, view, version, or help import and invoke function from respective files in cmd folder
  switch (cmd){
     case 'booklist':
      require('./cmd/booklist')(args)

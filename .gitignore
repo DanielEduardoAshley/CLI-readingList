@@ -1,1 +1,9 @@
 node_modules/
+<<<<<<< readinglistbranch
+.coveralls.yml
+coverage/
+=======
+coverage/
+.coveralls.yml
+node_modules/
+>>>>>>> local
