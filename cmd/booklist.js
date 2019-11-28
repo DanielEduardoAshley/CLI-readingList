@@ -3,7 +3,7 @@ const getBookData = require('../utils/books'); //Importing api data from books.j
 const fs = require('fs') //Node fs
 
 module.exports= async (args)=>{
-    ora().start()
+    const spinner = ora().start()
     // spinner.stop()
     const query = args.search || args.s //Gets user query from command line 
     let booksReturned = []
@@ -14,7 +14,7 @@ module.exports= async (args)=>{
         const books =  await getBookData(query)
 
         console.log('These are the results of your search :', books[0])
-
+        spinner.stop();
         // spinner.stop()
         //Pushes book titles to booksReturned array
         booksReturned.push(books[1])
@@ -24,7 +24,7 @@ module.exports= async (args)=>{
     
     }
     catch(err){
-        spinner.stop()
+        
         console.log('Was not able to retrieve the booklist based on your inquiry, please try your search again!')
 
 
