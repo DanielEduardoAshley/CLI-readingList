@@ -32,7 +32,6 @@ Terminal Commands
       --search, -s .....  search books by book title,
 ```
 
-
 ## Testing
 ```bash
 Run tests: npm test
