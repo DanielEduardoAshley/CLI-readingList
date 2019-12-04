@@ -29,7 +29,7 @@ module.exports = () => {
      require('./cmd/favorites')(args)
      break
     case 'view':
-    require('./cmd/view')(args)
+    require('./cmd/view')()
      break
     case 'version':
      require('./cmd/version')(args)
