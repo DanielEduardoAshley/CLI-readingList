@@ -1,4 +1,5 @@
-# Reading List CLI   
+# Reading List CLI
+[![Coverage Status](https://coveralls.io/repos/github/DanielEduardoAshley/CLI-readingList/badge.svg?branch=readinglistbranch)](https://coveralls.io/github/DanielEduardoAshley/CLI-readingList?branch=readinglistbranch)
 [![Build Status](https://travis-ci.org/DanielEduardoAshley/CLI-readingList.svg?branch=readinglistbranch)](https://travis-ci.org/DanielEduardoAshley/CLI-readingList)
 ### Google Books Api Command Line Interface Application
 
